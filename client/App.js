@@ -1,14 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Recommendation from './components/Recommendation';
+import FuelEfficiency from './components/FuelEfficiency';
+import HotdogOrNotHotdog from './components/HotdogOrNotHotdog';
 
 const App = () => {
 	return (
 		<Router>
 			<div className='container'>
-				<h1>Is it a hotdog?</h1>
+				<h1>Welcome to TensorFlow</h1>
 				<Routes>
-					<Route exact path='/' element={<Recommendation />} />
+					<Route exact path='/fuel_efficiency' element={<FuelEfficiency />} />
+					<Route exact path='/hotdog' element={<HotdogOrNotHotdog />} />
 				</Routes>
 			</div>
 		</Router>
