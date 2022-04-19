@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import FuelEfficiency from './components/FuelEfficiency';
 import MobileNet from './components/MobileNet';
+import './style/index.scss';
 
 const App = () => {
 	return (
