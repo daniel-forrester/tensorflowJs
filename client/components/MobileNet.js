@@ -66,7 +66,7 @@ function mobileNet() {
 
     return (
         <div className="mobileNet">
-            <h1 className='header'>Image Identification</h1>
+            <h1 className='header'>Image Identification ( Hotdog or Not Hotdog )</h1>
             <div className='inputHolder'>
                 <input type='file' accept='image/*' capture='camera' className='uploadInput' onChange={uploadImage} ref={fileInputRef} />
                 <button className='uploadImage' onClick={triggerUpload}>Upload Image</button>
