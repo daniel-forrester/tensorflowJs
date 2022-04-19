@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import FuelEfficiency from './components/FuelEfficiency';
-import HotdogOrNotHotdog from './components/HotdogOrNotHotdog';
+import Recommendation from './components/Recommendation';
+import MobileNet from './components/MobileNet';
 
 const App = () => {
 	return (
@@ -9,8 +9,8 @@ const App = () => {
 			<div className='container'>
 				<h1>Welcome to TensorFlow</h1>
 				<Routes>
-					<Route exact path='/fuel_efficiency' element={<FuelEfficiency />} />
-					<Route exact path='/hotdog' element={<HotdogOrNotHotdog />} />
+					<Route exact path='/' element={<Recommendation />} />
+					<Route exact path='/mobilenet' element={<MobileNet />} />
 				</Routes>
 			</div>
 		</Router>
