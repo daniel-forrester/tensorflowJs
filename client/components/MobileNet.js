@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useEffect, useRef } from 'react';
+import mnet from '../img/mobilenet.png';
 import * as mobilenet from "@tensorflow-models/mobilenet";
 
 function mobileNet() {
@@ -67,6 +68,7 @@ function mobileNet() {
     return (
         <div className="mobileNet">
             <h1 className='header'>Image Identification ( Hotdog or Not Hotdog )</h1>
+            
             <div className='inputHolder'>
                 <input type='file' accept='image/*' capture='camera' className='uploadInput' onChange={uploadImage} ref={fileInputRef} />
                 <button className='uploadImage' onClick={triggerUpload}>Upload Image</button>
@@ -92,6 +94,7 @@ function mobileNet() {
                 {imageURL && <button className='button' onClick={identify}>Identify Image</button>}
             </div>
             {history.length > 0 && <div className="recentPredictions">
+            <img src={mnet} className='mnet'></img>
                 <h2>Recent Images</h2>
                 <div className="recentImages">
                     {history.map((image, index) => {
